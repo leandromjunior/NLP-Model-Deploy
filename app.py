@@ -18,4 +18,4 @@ def index():
     predict = model.predict([query])
     prediction = labels[predict[0]]
 
-    return jsonify({"prediction" : prediction})
+    return jsonify({"A categoria desta manchete é" : prediction})
